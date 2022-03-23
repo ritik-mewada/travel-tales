@@ -1,5 +1,5 @@
 import React from "react";
-// import { IoLogoGithub, IoIosGlobe } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
 import styled from "styled-components";
 import Logo from "../nav/Logo";
 
@@ -9,6 +9,13 @@ const Footer = ({ light }) => {
       <Logo light={light} />
       <div className="copyright">
         &copy;{new Date().getFullYear()} Ritik Mewada
+        <a
+          href="https://github.com/ritik-mewada/travel-tales"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <IoLogoGithub className="icon" />
+        </a>
       </div>
     </FooterWrapper>
   );
